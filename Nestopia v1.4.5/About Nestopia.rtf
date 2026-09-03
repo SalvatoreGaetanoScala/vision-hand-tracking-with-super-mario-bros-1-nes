@@ -1,0 +1,258 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoascreenfonts1\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw12240\paperh15840\margl1440\margr1440\vieww11900\viewh25020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b\fs28 \cf0 Nestopia\
+v1.4.5 (November 24th, 2022)\
+http://www.bannister.org/software/
+\f1\b0\fs24 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 This document contains information specific to Nestopia. For general information about emulators and the program interface, please see the "About the Shell" document.
+\f1\b0 \
+\
+\
+
+\f0\b What is it?\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 Nestopia is a Nintendo NES emulator for Mac OS X. It is a direct port of the original Nestopia developed by Martin Freij for Windows.\
+\
+Nestopia supports a total of 201 different mappers, covering just about every known NES title. It can also open UNIF format NES games and NSF sound files. In addition to the standard NES pAPU, Nestopia supports six extra sound chips - Famicom Disk System, Konami VRC6, Konami VRC7, Namcot 106, Nintendo MMC5, and Sunsoft FME-07.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Why is Nestopia so slow?\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 Nestopia has been designed to be as accurate as possible. All The different components are synchronized "as needed" on a clock cycle level, basically meaning that the PPU and pAPU update themselves only if an instruction is going to change the way the PPU render pixels or the pAPU generates sound or else they simply just wait until the end of the frame and then carry on. They all use the "master clock" as a cycle counter base which eliminates the need for decimals altogether. With this method many games that rely on perfect timing work flawlessly on Nestopia (Mach Rider, Slalom, Marble Madness etc).\
+\
+This does mean that Nestopia is quite a lot slower than other NES emulators (which use scanline or tile based rendering). However, if you have a Mac produced in the last fifteen years, then Nestopia is for you.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Famicom Disk System\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 Nestopia is fully compatible with Famicom Disk System games in .fds format. The file "disksys.rom" must be present in the same directory as Nestopia for these to work. Please do not ask me to send you this file; it is copyrighted software. \
+\
+Writing to FDS disks is not supported on the Macintosh at this time, as it is a fair bit of work to do and not something I see the need for. If this feature is important to you, then please let me know by e-mail and I'll see about implementing it.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 \
+Source Code\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\partightenfactor0
+
+\f1\b0 \cf0 Nestopia is normally covered by the GNU General Public License.\
+\
+Martin Freij has generously agreed to license Nestopia to me under a closed-source license for the present. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Version History\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \ulc0 v1.4.5 - November 24th, 2022\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Updated to shell version 3.2. See \'93About the Shell\'94 for changes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.4.4 - May 1st, 2021\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Improved performance and efficiency on Mac computers with Apple silicon.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul v1.4.3 - December 14th, 2019\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Updated to shell version 3.1. See \'93About the Shell\'94 for changes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.4.2 - March 10th, 2018\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Rebuilt using 64-bit Cocoa APIs and shell version 3.0. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.4.1 - September 27th, 2008\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Updated to shell version 2.3. See "About the Shell" for changes.\ul \
+\
+\
+v1.4.0 - June 8th, 2008\
+\
+\ulnone  - Updated to latest code for Windows (again!). The main change in this release is a better and more flexible PPU address line implementation, but support has also been added for mappers 177, 179, 219, and 221.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+v1.3.9 - June 7th, 2008\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Updated to latest code for Windows.\
+\
+ - Updated to shell version 2.2.3. See "About the Shell" for changes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.3.7 - June 10th, 2007\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \ulnone  - Synchronised with the latest release for Windows.\
+\
+ - Worked around a crash in NTSC mode caused by the Xcode optimizer.\
+\
+ - Added support for the Zapper light gun (using the mouse).\
+\
+ - Added support for configuring dip switches in VS games.\
+\
+ - PAL games now play at the correct speed of fifty frames per second.\
+\
+ - Added support for the mouse, as used by Educational Computer 2000 (Ru). Note that the mouse movement isn't perfect yet.\
+\
+ - Added support for the barcode reader. A menu command has been added which sends random barcodes to the current game.\ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \
+ \ulnone - Updated to shell version 2.2. See "About the Shell" for changes.\
+\ul \
+\
+v1.3.6 - March 13th, 2007\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Synced with v1.3.6 for PC.\
+\
+ - Corrected a bug that prevented some NSF files from showing in the Open dialog.\
+\
+ - Added and tweaked a number of icons, with thanks to the good people at MES.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.3.5 - February 15th, 2007\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - In sync with the latest version for PC.\
+\
+ - Resolved an issue where .nes files might not be visible in the Open dialog on Intel Macs. Thanks to Josh Roeda for the report.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul v1.3.4 - September 16th, 2006\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Updated to shell version 2.1. See "About the Shell" for changes.\ul \
+\
+\ulnone  - In sync with the latest release for Windows.\
+\
+ - Added sound sample support for assorted Japanese games. Nestopia will prompt you for the files if you choose one. They need to be in the ~/Library/Application Support/Bannister/Nestopia/Sound Samples directory.\
+\
+ - Added file filtering to the open dialog.\
+\
+ - Added support for drag & drop with NSF files.\
+\
+ - Added support for muting the five main sound channels independently.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.2.9 - May 6th, 2006\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - In sync with the latest version for PC.\ul \
+\
+\
+v1.2.8 - April 15th, 2006\
+\
+\ulnone  - Ported to Xcode and recompiled as Universal Binary.\
+\
+ - Updated to be in sync with v1.2.8 on the PC.\
+\
+ - Fixed support for SRAM.\
+\
+ - Hooked up support for NTSC artifact emulation. \
+\
+ - Added "Quick Quit" and "Quick Record" keys.\
+\
+ - Added support for the Nestopia database, which can automatically correct mapper and mirroring for certain titles.\ul \
+\
+\
+v1.2.4 - January 12th, 2005\
+\
+\ulnone  - In sync with v1.2.4 for PC, bringing new mappers (137, 138, 139, 141, 143, 145, 146, 147, 148, and 149), a new sound chip (VRC7 -- Lagrange Point), and numerous fixes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.2.3 - December 4th, 2005\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - In sync with v1.2.3 for PC.\ul \
+\
+\
+v1.2.0 - October 6th, 2005\
+\
+ \ulnone - In sync with v1.2.0 for PC.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+ \ulnone - Updated to shell version 1.6. See "About the Shell" for changes.\ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 \ulnone \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ul v1.1.2 - September 11th, 2004\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Added support for Game Genie codes.\ul \
+\ulnone \
+ - Added support for .zip files.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+ \ulnone - Added "Trim Border Area" option.\ul \
+\
+\
+v1.1.1 - June 20th, 2004\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - v1.1.0 inadvertently broke FDS support entirely. Fixed.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.1.0 - June 19th, 2004\
+\
+ \ulnone - Ported to Mach-O environment.\
+\
+ - Updated to shell version 1.5. See "About the Shell" for changes.\
+\ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Switching disks in FDS emulation was inadvertently broken right before the 1.09 release. Fixed.\
+\
+ - Added the ability to use an emulated palette rather than the default internal one. In preferences.\
+\
+ - Added the ability to turn off the sprite limit in the NES PPU.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+v1.0.9 - December 25th, 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\partightenfactor0
+\cf0 \
+\ulnone  - Initial Release}

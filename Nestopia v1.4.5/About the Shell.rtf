@@ -1,0 +1,458 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoascreenfonts1\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-BoldOblique;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red255\green0\blue6;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c100000\c0\c2353;}
+\paperw12240\paperh15840\margl1440\margr1440\vieww11240\viewh26160\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b\fs28 \cf0 Mac Emulator Shell\
+v3.2.0 (November 24th, 2022)\
+http://www.bannister.org/software/\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\fs24 \cf0 \
+About\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ulnone The enclosed emulator uses the Macintosh Emulator Port Shell by Richard Bannister. This has a common feature set between all supported emulators, which this document attempts to cover briefly.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 System Requirements
+\f1\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f2\i\b \cf2 Emulators using this shell are only supported on Mac OS X 10.13 or later. 
+\f1\i0\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \
+Older versions of supported emulators will run on OS releases as old as 10.4. Unfortunately I am no longer able to supply or support these releases.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 ROMs/Games/etc\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 All these emulators require ROM images or games in order to do anything useful. Transferring software from old platforms typically requires special hardware to accomplish. Documentation on how this is done is widely available on the Internet.\
+\
+Distribution of such software on the Internet counts as software piracy unless the copyright owners have given their express permission for this to take place. Amstrad, for example, has given permission for their entire back catalog to be used in emulation, and they deserve praise for their enlightened attitude. Once again, an Internet search will point you to what you need.\
+\
+A good place to start is the site https://www.retroveteran.com/.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f2\i\b \cf3 Do not under any circumstances ask me to send you game files, and do not ask me for further information beyond the above.  The act of requesting such information officially revokes any license you have to use my software.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\i0\b0 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Additional Options\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 Additional features can be added to this software using Emulator Enhancer, a shareware plugin that works with over twenty-five emulators. These include:\
+\
+ \'95 Aspect ratio correction\
+ \'95 Bilinear filtering\
+ \'95 Full screen mode\
+ \'95 Simulated screen curvature\
+ \'95 USB gamepad support\
+ \'95 VBL synchronised video\
+\
+Selected emulators also gain:\
+\
+ \'95 Custom icon generation\
+ \'95 Graphical recent game selection\
+ \'95 Network play\
+\
+The plugin may be downloaded from http://www.bannister.org/software/.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Main Window\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ulnone The main window of each supported emulator can be resized to any size you like. The zoom box will alternate between the last selected size and full screen. If you want to play in another size, simply drag the grow box in the bottom right hand corner of the window. (It's not visible - but it is there).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 \ul \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone Preferences\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ul General Tab\
+\
+ \ulnone  - Video allows you to choose between a variety of different transformations which are applied to the emulated display before it is drawn to the screen. The size indicates the size of the source image before the final video copy is done. If this is bigger than the window size, the image will be scaled down; if it is smaller, then it will be scaled up. Some effects may not be capable of full speed on older hardware.\
+\
+ - Show frame rate shows the current frame rate on the top right hand corner of the emulated display.\
+\
+ - Show information placards shows the current frame rate on the top right hand corner of the emulated display.\
+\
+ - Pause emulation when in background (on by default) stops the emulated hardware when the emulator is switched into the background.\
+\
+ - Speed Limit restricts the emulator to 100% of the original hardware speed.\
+\
+ - Enable Sound (most emulators) does exactly what the name suggests!\
+\
+\ul Input Tab\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone The input tab allows you to map emulated joysticks to specific keys on the keyboard. Simply click on the item of your choice and press the appropriate key on the keyboard.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul Emulator Tab\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone If the specific emulator you are using has any special options, they can be found here.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul More Tab\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone This tab provides some information on Emulator Enhancer.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Thanks\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 Special thanks to all those who have tested this software during its development cycle, and to all those who create emulation technology for our enjoyment. \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 Version History\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ul v3.2.0 - November 24th, 2022\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Fixed long-standing issue where modifier keys (Control, Shift, Option, Command) would get stuck if held down for more than about half a second. Thanks to Martin for helping me track this down.\
+\
+- Fixed issue where invalid files could sometimes be added to the Recent items menu.\
+\
+- Fixed crash when using the Quick Screenshot and Quick Audio Record functions with no open ROM.\
+\
+- Recent game information now uses much less disk space.\
+\
+- Upgraded embedded version of ZLIB to 1.2.13.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v3.1.1 - May 1st, 2021\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - Improved performance and efficiency on Mac computers with Apple silicon.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f0\b \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+
+\f1\b0 \cf0 \ul v3.1 - December 14th, 2019\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone - The shell now works properly on macOS Catalina.\
+\
+- Added new Metal video renderer. The old OpenGL code has been removed.\
+\
+- Fixed a number of visual glitches in the Preferences window on Mojave.\
+\
+- Fixed a number of issues with video display on Mojave.\
+\
+- Added support for Dark Mode on Mojave.\
+\
+- Added code to stop the display going to sleep when an emulator is running.
+\f0\b \
+\
+\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+
+\f1\b0 \cf0 \ul v3.0 - March 10th, 2018\
+\
+\pard\tqr\tx106\tx320\li100\fi-100\partightenfactor0
+\cf0 \ulnone  - Complete rewrite for modern operating systems using 64-bit Cocoa APIs. The shell now requires OS X 10.11 or later.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ul \
+\
+v2.3 - September 27th, 2008\
+\
+\pard\tqr\tx106\tx320\li100\fi-100\partightenfactor0
+\cf0 \ulnone  - Fixed an obscure endian bug that resulted in odd window sizes when an emulator preferences file was moved between PowerPC and Intel.\
+\
+ - Modified the behaviour of the Quick Freeze function, so that the last ten quick freezes for each game are kept in ~/Library/Application Support/Bannister/(emulator name)/Saved States. You can restore these at any time using the Defrost menu command. Added code to stop the quick freeze and quick defrost keys from being repeated. Thanks to David McCabe for the suggestion.\
+\
+ - Replaced custom about box with standard HIAboutBox. Removed option to pause execution when about box is open.\
+\
+ - Brushed metal mode is now off by default on new installs, as well as existing installs where users press the Default button.\
+\
+ - Audio recording no longer stops when emulator is switched to background, provided that the option to keep emulating in background is on. Recording will still stop if the emulator does.\
+\
+ - Fixed several minor visual glitches in the Preferences dialog box.\ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.2.3 - June 7th, 2008\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \ulnone - Corrected a bug where pressing certain keys while the Emulator Settings window was open could cause a Fatal Assertion Failure on line 1772 of ce_prefs.c.\
+\
+ - Worked around a bug in OS X 10.5 or higher that sometimes resulted in menu items being greyed out incorrectly. \ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.2.2 - March 3rd, 2008\
+\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone  - Made some slight adjustments to the behaviour of the "Prioritise speed over smoothness" option.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0  - Changed the default preferences to turn brushed metal off by default, since it looks pretty hideous under 10.5 or later.\ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.2 - June 6th, 2007\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \ulnone  - Fixed a nasty crash that could occur when using high requirement blitters (HQ4x/etc) on slower multiprocessor machines.\
+\
+ - Added a hidden preferences option to disable the information placards ("Emulator Reset", etc). To change this, open the preferences plist file in a text editor.\
+\
+ - Added proper code interface for getting the mouse position on display. Nestopia uses this for Zapper support, and TEO/Thom use it replacing a horrible hack used previously.\ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.1.1 - February 15th, 2007\
+\
+\pard\tx0\tqr\tx106\partightenfactor0
+\cf0 \ulnone  - Resolved assertion failure, ce_file.c, line 379, when saving a saved state with the same name as an existing file. Thanks to about two hundred people for reporting this one :-)\ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.1 - September 16th, 2006\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone \
+\pard\tx0\tqr\tx106\partightenfactor0
+\cf0  - Major rewrite to internal file handling code. This brings support for long file names and non-ASCII character sets. The most visible aspect of this change is that Japanese file names now appear correctly in the emulator. (You may need to rename some existing battery RAM files/saved states so that this update can see them correctly.) \
+\
+ - Fixed several endian bugs; of particular note, screenshots and audio recordings now work correctly on Intel Macs.\
+\
+ - File extensions are now included by default when saving screenshots or audio recordings.\
+\
+ - Worked around issue preventing keyboard from working in full screen mode in Arnold and Frodo.\
+\
+ - Resolved a number of situations where keyboard input would be registered even though the emulator window was not active.\ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\
+v2.0 - April 15th, 2006\
+\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone - Ported to Xcode and recompiled as Universal Binary.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ul \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone - Interleaved blitters now work properly on multiprocessor machines.\
+\
+\pard\tqr\tx106\tx320\partightenfactor0
+\cf0  - Fixed an issue where keyboard configuration could occasionally get confused during an emulator upgrade. In this situation, the keys are now reset to their defaults.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+- Internal code now uses FSRef instead of FSSpec.\
+\
+- Placard drawing ("Emulation Reset" etc) now uses CoreGraphics instead of QuickDraw.\
+\
+- Fixed an issue where Close menu item was not disabled when no ROM was open in some emulators.\
+\
+- Removed some obsolete code that was slowing down overall performance.\
+\
+- Fixed several memory leaks.\ul \
+\
+\
+v1.6.5 - November 13th, 2005\
+\
+\pard\tqr\tx106\tx320\partightenfactor0
+\cf0 \ulnone  - Addressed an issue with the sound buffering code that had caused poor quality sound output in BSNES. This may have a positive effect on other emulators too.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ul \
+v1.6.0 - October 6th, 2004\
+\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone  - Addressed an issue where the menu bar would not appear properly on program launch in certain situations.\
+\
+ - Configure Keyboard button is no longer present in emulators that do not support it.\
+\
+ - Some internal changes to allow compilation in Xcode.\
+\
+ - Added statistics gathering (Time Played, Files Opened) to the code. There is no way to view these yet, but this will come in future.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ul \
+\
+v1.5.3 - December 11th, 2004\
+\
+\pard\tqr\tx106\tx320\partightenfactor0
+\cf0 \ulnone  - Fixed bug causing unreasonably high CPU usage when in background when the "Run as fast as possible" option was set. Thanks to Ty Wangsness for the report.\
+\
+ - Fixed assertion failure, ce_file.c line 202, when using the "Open With" contextual menu in the Finder on Horizon. Thanks to Eric Crouch for the report.\
+\
+ - Fixed issue where Turbo key in console emulators did not work correctly when "Sync to Monitor Refresh" was on. Thanks to Revned for the report.\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ul \
+\
+v1.5.2 - September 30th, 2004\
+\
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \ulnone  - Removed "Cancel" button from Preferences. It hasn't worked for several releases anyway.\
+\pard\tqr\tx106\tx320\partightenfactor0
+\cf0 \
+ - Quick Screenshot now adds a three digit number to file names. Useful if you want to take multiple shots of one game. \
+\pard\tqr\tx106\tx320\li320\fi-320\partightenfactor0
+\cf0 \
+ - Added the ability to record audio. Note that this option requires emulator updates.\ul \
+\
+\
+v1.5.1 - July 9th, 2004\
+\
+\ulnone  - Fixed small memory leak in windowing code.\
+\
+ - Added the ability to modify the frame rate colour.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.5 - June 19th, 2004\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Some reworking under the hood to make things work on Mach-O.\
+\
+ - Saved states/etc now get put in /Users/*/Library/Application Support/Bannister/Emulator Name/*.\
+\
+ - Quick Screenshot now saves files on the desktop.\
+\
+ - Added the ability to pause emulation when the active user is switched.\
+\
+ - Improved support for Macs with more than one monitor.\
+\
+ - Separated Blitter module (see "Developer" above) and added some new Altivec blitter code for the most common effects. In most cases this is significantly faster on G4/G5 machines. (The old code is still available too for G3 users).\
+\
+ - Further performance enhancements in OpenGL code.\
+\
+ - Revised Preferences handling to use official Apple API and .plist file.\
+\
+ - Large numbers of bug fixes.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+v1.4.2 - February 5th, 2004\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Sped up code used to draw frame rate.\
+\
+ - Improved error handling in the sound code.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.4.1 - December 25th, 2003\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Implemented major optimization to the OpenGL code. People with supported video cards may see as much as a 100% performance improvement.\
+\
+ - Fixed bug in HQX blitters introduced in v1.3.1, which caused the bottom row of video to be corrupted in certain situations.\
+\
+ - Fixed issue preventing saved states getting the correct file type.\
+\
+ - Updated to ZLIB v1.2.1. (Previous shell did not include ZLIB, and emulators were using assorted versions).\ul \
+\
+\
+v1.3.1 - December 1st, 2003\
+\
+\ulnone  - Fixed possible memory corruption with emulators that change their video size during execution. (Genesis Plus, TGEmu, ...)\
+\
+ - More optimizations to the hqx blitters, improving the worst case performance significantly.\
+\
+ - Addressed an issue where keys would continue to work when certain emulators were in the background.\
+\
+ - Added "quick screenshot" function (requires emulator updates).\
+\
+ - About box now observes brushed metal preference (which is now on by default).\
+\
+ - Some optimizations to the main program loop for improved performance. There is still more to do, though.\
+\
+ - Major bug fixed in the frameskipping code; people on slower Macs should see a substantial improvement in frame rate. (Be sure to leave the frame skipper in Automatic mode for best results).\ul \
+\
+\
+v1.2.3 - November 4th, 2003\
+\
+\ulnone  - Did some serious optimization to hq2x, hq3x, and hq4x, leaving them up to 300% faster than previous versions. (The source code to my optimized version has been sent back to Maxim Stepin, the hq2x/hq3x/hq4x developer).\
+\
+ - Fixed a situation where placard displays ("Emulation Reset", etc) failed to disappear correctly.\ul \
+\
+\
+v1.2.2 - October 30th, 2003\
+\
+\ulnone  - Added support for frame rate changing at run time (required by Generator and Rainbow).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.2.1 - October 12th, 2003\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Moved default Quick Freeze/Defrost keys to F7/F8 to avoid conflict with Expose.\
+\
+ - Placard displays now work again ("Emulation Reset", "Quick Freeze", etc).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.2 - September 30th, 2003\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Added some hooks needed by fMSX.\
+\
+ - Added hq2x and hq4x Blitter modes (the latter of which *does* need a dual 2.0 G5 for full speed).\
+\
+ - Added 3x Simple Smoothing mode (pretty fast).\
+\
+ - Fixed an issue preventing windows being bigger than 5x actual size. \
+\
+ - Fixed a bug in Preferences handling that could make options not work when the Default button was pressed.\ul \
+\
+\
+v1.1 - September 3rd, 2003\
+\
+\ulnone  - Added support for non-power-of-two textures. The cards that need this the most (RAGE 128 and earlier) do not support this extension. However, everyone else should see a performance improvement. \
+\
+ - Tweaked window resizing to match QuickTime. Aspect ratio is preserved by default; hold down shift key to go to strange sizes, or hold down option key to stick to regular multiples. \
+\
+ - Adjusted window alignment code to limit to four-pixel boundaries instead of eight. \
+\
+ - Increased number of items in Open Recent menu to ten, and added "Clear Menu" option. \
+\
+ - Fixed issue where battery RAM and freeze states did not work correctly when Emulator Enhancer was installed. \
+\
+ - Added support for overriding the generic keyboard handling (needed for computer emulators such as MO5 and Oric).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ul \
+\
+v1.0 - August 7th, 2003\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\partightenfactor0
+\cf0 \ulnone  - Initial Release\
+}
